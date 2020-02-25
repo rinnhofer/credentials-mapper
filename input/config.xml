@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Shop System Plugins:
+ * - Terms of Use can be found under:
+ * https://github.com/wirecard/magento2-ee/blob/master/_TERMS_OF_USE
+ * - License can be found under:
+ * https://github.com/wirecard/magento2-ee/blob/master/LICENSE
+ */
+-->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <payment>
+            <wirecard_elasticengine_paypal>
+                <title>Wirecard PayPal</title>
+                <active>0</active>
+                <can_initialize>1</can_initialize>
+                <can_authorize>0</can_authorize>
+                <can_void>1</can_void>
+                <can_capture>1</can_capture>
+                <can_capture_partial>1</can_capture_partial>
+                <can_refund>1</can_refund>
+                <can_refund_partial_per_invoice>1</can_refund_partial_per_invoice>
+                <can_use_checkout>1</can_use_checkout>
+                <is_gateway>1</is_gateway>
+                <sort_order>1</sort_order>
+                <model>PaypalFacade</model>
+                <order_status>processing</order_status>
+                <payment_action>authorize</payment_action>
+                <send_shopping_basket>1</send_shopping_basket>
+                <send_additional>1</send_additional>
+            </wirecard_elasticengine_paypal>
+        </payment>
+    </default>
+</config>
